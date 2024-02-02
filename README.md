@@ -1,6 +1,6 @@
 # ECOMMERCE (Clothing)
 
-Welcome to our E-Commerce Project! This project is a web-based application focusing on a simplified e-commerce platform. It's designed to showcase fundamental concepts of web development, including user authentication, product management, and real-time updates using WebSockets.
+Welcome to my E-Commerce Project! This project is a web-based application focusing on a simplified e-commerce platform. It's designed to showcase fundamental concepts of web development, including user authentication, product management, and real-time updates using WebSockets.
 
 ## Features:
 - **User Authentication:** Secure user accounts with sign-up, login, and logout functionality.
