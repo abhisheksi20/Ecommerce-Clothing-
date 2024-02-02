@@ -1,5 +1,5 @@
 #Ignore the node_module Directory
-node_module
+node_modules
 
 #Ignore enviourment Files
 .env
