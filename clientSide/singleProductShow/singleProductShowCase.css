@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+}
+
+#page {
+  width: 100%;
+}
+
+.top_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .top_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .search-container #search {
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+  }
+
+  .top-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.centeredtext a {
+  text-decoration: none;
+  color: #000;
+}
+
+.centeredtext a:hover {
+  color: #333;
+}
+
+#search {
+  text-align: center;
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #000;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.top-button {
+  display: flex;
+}
+
+/* TO set the drop down menu of account button */
+.account {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.account .submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  line-height: 2rem;
+  z-index: 10;
+  
+}
+
+.submenu.show {
+  display: flex;
+}
+
+/* .account:hover .submenu {
+  display: flex;
+  opacity: 1;
+ 
+} */
+/* 
+.account .accountButtton:hover + .submenu {
+  display: block;
+} */
+
+/* To set the drop down menu of shopping button */
+
+.shopping {
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping .submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 4.1rem;
+  width: 10%;
+  line-height: 2rem;
+  z-index: 10;
+  
+}
+
+.shopping:hover .submenu {
+  display: flex;
+}
+
+
+
+
+
+.top-button a {
+  background-color: white;
+  text-align: center;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+
+.top-button a:hover {
+  color: #333;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.top-menu1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: start;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submenulist {
+  list-style: none;
+  display: none;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #0056b3;
+  transition: opacity 0.3s ease-in, max-height 0.3s ease-in;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.top-menu a {
+  flex-grow: 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.top-menu a:hover {
+  color: #333;
+  flex-grow: 0.1;
+}
+
+main {
+  background-color: rgb(240, 237, 237);
+}
+
+.mainfirst {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5vw;
+}
+
+.about {
+  text-wrap: wrap;
+  width: 50%;
+  line-height: 2rem;
+}
+
+.about .quantity {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.quantity button  .fa-check {
+  padding-left: 5px;
+  display: none;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart p {
+  display: none;
+}
+
+.clotheType span {
+  color: red;
+}
+
+.about ul {
+  list-style-type: disc;
+}
+
+.productReviewsandDetail {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.description button {
+  font-size: larger;
+  font-weight: 700;
+  color: #303030;
+
+  padding-right: 1rem;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: red;
+  border-width: 4px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.description button:hover {
+  color: rgb(8, 8, 184);
+  cursor: pointer;
+}
+
+.productReviewsandDetail {
+  position: relative;
+  height: 80vh;
+}
+
+
+.description p {
+  margin-top: 2rem;
+
+}
+
+.description .active {
+   display: none;
+}
+
+.reviews {
+  display: none;
+  position: absolute;
+  margin-top: 5rem;
+}
+
+.reviews p {
+  font-size: 2rem;
+}
+
+.present {
+  display: block;
+
+}
+
+.ratingIcons {
+  display: flex;
+  align-items: center;
+}
+.ratingIcons div {
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+/* For adding colours in the rating icons */
+
+.color {
+  color: aquamarine;
+}
+
+.textField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textField button {
+  width: 10rem;
+  padding: 0.5rem;
+}
+
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  height: 100vh;
+}
+
+.relatedProducts {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.productImage {
+  display: flex;
+  flex-direction: column;
+}
+
+.productImage p {
+  text-align: center;
+}
+
+.productDescription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer1 {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.horizontal-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-center p {
+  width: 200px;
+}
+
+.footer1 ul li {
+  list-style: none;
+  text-align: start;
+  line-height: 1.5rem;
+}
+
+.horizontal-center span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer2 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.footer2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer2 a:hover {
+  color: #333;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="loginPage.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="component">
+        <div>
+          <h2>Login</h2>
+          <p>Please enter your login and password!</p>
+
+          <div>
+            <input type="email" id="typeEmailX" required/>
+            <label for="typeEmailX">Email</label>
+          </div>
+
+          <div>
+            <input type="password" id="typePasswordX" required minlength="8"/>
+            <label for="typePasswordX">Password</label>
+          </div>
+
+          <p><a href="#!">Forgot password?</a></p>
+
+          <button type="submit" class="login">Login</button>
+
+          <div>
+            <a href="#!"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#!"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+            <a href="#!"><i class="fab fa-google fa-lg"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <p>Don't have an account? <a href="#!">Sign Up</a></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/userLogin.js"></script>
+  </body>
+</html>
